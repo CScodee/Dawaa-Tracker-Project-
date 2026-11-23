@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="1">
+
+        <TableRow android:padding="10dp">
+            <TextView
+                android:text="Name"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/tvDetailName"
+                android:textSize="18sp" />
+        </TableRow>
+
+        <TableRow android:padding="10dp">
+            <TextView
+                android:text="Dose"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/tvDetailDose"
+                android:textSize="18sp" />
+        </TableRow>
+
+        <TableRow android:padding="10dp">
+            <TextView
+                android:text="Times per day"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/tvDetailTimes"
+                android:textSize="18sp" />
+        </TableRow>
+
+        <TableRow android:padding="10dp">
+            <TextView
+                android:text="Notes"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/tvDetailNotes"
+                android:textSize="18sp" />
+        </TableRow>
+    </TableLayout>
+
+    <Button
+        android:id="@+id/btnDetailDelete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Delete this medicine"
+        android:textColor="@color/red" />
+
+</LinearLayout>
